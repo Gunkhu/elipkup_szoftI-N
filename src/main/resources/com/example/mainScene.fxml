@@ -20,10 +20,8 @@
       <Label layoutX="34.0" layoutY="102.0" text="Sugár_1" />
       <Label layoutX="348.0" layoutY="102.0" text="Sugár_2" />
       <Label layoutX="262.0" layoutY="250.0" text="Térfogat:" />
-      <Label layoutX="511.0" layoutY="333.0" text="Csorba Péter" />
-      <Label layoutX="516.0" layoutY="369.0" text="2026.04.21" />
-      <Label layoutX="521.0" layoutY="350.0" text="Szoft I/N" />
       <Label layoutX="183.0" layoutY="166.0" text="Magasság" />
       <TextField fx:id="heightField" layoutX="247.0" layoutY="162.0" />
+      <Button layoutX="481.0" layoutY="314.0" mnemonicParsing="false" onAction="#onClickAboutButton" text="Névjegy" />
    </children>
 </Pane>

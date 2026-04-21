@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.AboutController">
+   <children>
+      <Button layoutX="67.0" layoutY="116.0" mnemonicParsing="false" onAction="#goMainSceneButton" prefHeight="41.0" prefWidth="130.0" text="Vissza" />
+      <Label layoutX="264.0" layoutY="25.0" text="Névjegy">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="429.0" layoutY="247.0" text="Szoft I/N">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="283.0" text="2026.04.21">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="417.0" layoutY="217.0" text="Csorba Péter">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

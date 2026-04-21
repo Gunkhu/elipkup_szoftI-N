@@ -26,6 +26,11 @@ public class MainController {
 
     @FXML
     private TextField volumeField;
+    
+    @FXML
+    void onClickAboutButton(ActionEvent event) {
+        App.setRoot("aboutScene");
+    }
 
     @FXML
     void onClickCalcButton(ActionEvent event) {

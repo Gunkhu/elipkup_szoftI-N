@@ -16,6 +16,9 @@ import javafx.scene.control.TextField;
 public class MainController {
 
     @FXML
+    private TextField heightField;
+
+    @FXML
     private TextField radius1Field;
 
     @FXML
@@ -26,7 +29,17 @@ public class MainController {
 
     @FXML
     void onClickCalcButton(ActionEvent event) {
+        startCalc();
+    }
 
+    void startCalc(){
+        double radius1 = Double.parseDouble(radius1Field.getText());
+        double radius2 = Double.parseDouble(radius2Field.getText());
+        double height = Double.parseDouble(heightField.getText());
+
+        double volume = Solution.calcVolume(radius1, radius2, height);
+        String roundedVolume = String.format("%.3f", volume);
+        volumeField.setText((roundedVolume));
     }
 
 }

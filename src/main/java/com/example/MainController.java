@@ -40,6 +40,14 @@ public class MainController {
         double volume = Solution.calcVolume(radius1, radius2, height);
         String roundedVolume = String.format("%.3f", volume);
         volumeField.setText((roundedVolume));
+
+        String line = makeLine(radius1,radius2,height,roundedVolume);
+        Storage storage = new Storage();
+        storage.writeFile(line);
+    }
+
+    String makeLine(double radius1,double radius2,double height, String roundedVolume){
+        return radius1 + ":" + radius2 + ":" + height + ":" + roundedVolume + "\n";
     }
 
 }
